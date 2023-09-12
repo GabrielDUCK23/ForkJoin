@@ -1,0 +1,13 @@
+run:
+Gabriel Ernesto Rios Sanchez
+Jair Alfonso Suarez Flores
+Hector Ulises Sánchez Gonzalez 
+
+Tiempo 5259700
+
+Tiempo Secuencial 366400
+
+Gabriel Ernesto Rios Sanchez
+Jair Alfonso Suarez Flores
+Hector Ulises Sánchez Gonzalez 
+BUILD SUCCESSFUL (total time: 0 seconds)
