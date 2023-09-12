@@ -28,7 +28,7 @@ public class TestRARA {
 
     public static void main(String[] args) {
         System.out.println("Gabriel Ernesto Rios Sanchez\nJair Alfonso Suarez Flores\nHector Ulises Sánchez Gonzalez ");
-        long inicio, fin, fin2,inicio2;
+//        long inicio, fin, fin2,inicio2;
         int[][] matriz = new int[100][100]; // Cambiar las dimensiones según tus necesidades
         int[][] matriz2 = new int[100][100]; // Cambiar las dimensiones según tus necesidades
 
@@ -36,12 +36,13 @@ public class TestRARA {
 
         RandomArregloRA rara = new RandomArregloRA(matriz, 0, matriz.length, 0, matriz[0].length);
 
-        inicio = System.currentTimeMillis();
+        long inicio = System.nanoTime();
         fjp.invoke(rara);
-        fin = System.currentTimeMillis();
+        long fin = System.nanoTime();
 
         System.out.println("\n" + "Tiempo " + (fin - inicio));
-        inicio2 = System.currentTimeMillis();
+
+       long  inicio2 = System.nanoTime();
         for (int i = 0; i < 100; i++) {
             for (int j = 0; j < 100; j++) {
                 matriz2[i][j] = (int) (Math.random() * 100);
@@ -49,7 +50,7 @@ public class TestRARA {
             }
         }
         
-        fin2 = System.currentTimeMillis();
+        long fin2 = System.nanoTime();
         System.out.println("\n" + "Tiempo Secuencial " + (fin2 - inicio2));
 
 //        imprimirMatriz(matriz);

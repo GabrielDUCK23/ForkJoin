@@ -38,28 +38,18 @@ public class RandomArregloRA extends RecursiveAction {
     }
 
    public void proceso(int[][] matriz, int filaInicio, int filaFin, int columnaInicio, int columnaFin) {
-    System.out.println("Trabajo desde (" + filaInicio + ", " + columnaInicio + ") hasta (" + filaFin + ", " + columnaFin + ")");
-    String llenado = "";
+//    System.out.println("Trabajo desde (" + filaInicio + ", " + columnaInicio + ") hasta (" + filaFin + ", " + columnaFin + ")");
+//    String llenado = "";
     for (int i = filaInicio; i < filaFin; i++) {
         for (int j = columnaInicio; j < columnaFin; j++) {
             matriz[i][j] = (int) (Math.random() * 100);
-            llenado += "matriz[" + i + "][" + j + "]=" + matriz[i][j] + ",";
+//            llenado += "matriz[" + i + "][" + j + "]=" + matriz[i][j] + ",";
         }
     }
-    System.out.println(llenado + "\n"); // Agrega "\n" al final para un salto de línea
+//    System.out.println(llenado + "\n"); // Agrega "\n" al final para un salto de línea
 }
    
-   public void procesoSecuenial(int[][] matriz, int filaInicio, int filaFin, int columnaInicio, int columnaFin) {
-    System.out.println("Trabajo desde (" + filaInicio + ", " + columnaInicio + ") hasta (" + filaFin + ", " + columnaFin + ")");
-    String llenado = "";
-    for (int i = filaInicio; i < filaFin; i++) {
-        for (int j = columnaInicio; j < columnaFin; j++) {
-            matriz[i][j] = (int) (Math.random() * 100);
-            llenado += "matriz[" + i + "][" + j + "]=" + matriz[i][j] + ",";
-        }
-    }
-    System.out.println(llenado + "\n"); // Agrega "\n" al final para un salto de línea
-}
+   
 
 
      
