@@ -17,7 +17,7 @@ import java.util.concurrent.RecursiveAction;
 
 public class RandomArregloRA extends RecursiveAction {
     private int[][] matriz;
-    private static final int umbral = 2;
+    private static final int umbral = 10;
     private int filaInicio, filaFin, columnaInicio, columnaFin;
 
     public RandomArregloRA(int[][] matriz, int filaInicio, int filaFin, int columnaInicio, int columnaFin) {
@@ -48,6 +48,19 @@ public class RandomArregloRA extends RecursiveAction {
     }
     System.out.println(llenado + "\n"); // Agrega "\n" al final para un salto de línea
 }
+   
+   public void procesoSecuenial(int[][] matriz, int filaInicio, int filaFin, int columnaInicio, int columnaFin) {
+    System.out.println("Trabajo desde (" + filaInicio + ", " + columnaInicio + ") hasta (" + filaFin + ", " + columnaFin + ")");
+    String llenado = "";
+    for (int i = filaInicio; i < filaFin; i++) {
+        for (int j = columnaInicio; j < columnaFin; j++) {
+            matriz[i][j] = (int) (Math.random() * 100);
+            llenado += "matriz[" + i + "][" + j + "]=" + matriz[i][j] + ",";
+        }
+    }
+    System.out.println(llenado + "\n"); // Agrega "\n" al final para un salto de línea
+}
+
 
      
      
